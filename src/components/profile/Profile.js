@@ -9,8 +9,8 @@ const Profile = ({ name, tag, location, avatar, stats }) => {
       <div className="description">
         <img src={avatar} alt="Аватар пользователя" className={styles.avatar} />
         <p className={styles.name}>{name}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
+        <p className={styles.tag}>@{tag}</p>
+        <p className={styles.location}>{location}</p>
       </div>
 
       <ul className={styles.stats}>
@@ -33,7 +33,8 @@ const Profile = ({ name, tag, location, avatar, stats }) => {
 
 Profile.defaultProps = {
   avatar:
-    'https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png',
+  // '../../images/blank-profile-picture.webp'
+  'https://lh3.googleusercontent.com/proxy/7PZS5ICraBfLN3ynSel7Lx-fL5dyoJEKT-6PNt84saWHBp5zNDinRMHJ9R0oFonRyJBoBItdZe9xvENoPBIebU5x48nO3XGXKBeuK06bab5I7j7QcXqnZYVwLdxdC6R5eKnHXA'
 };
 
 Profile.propTypes = {
